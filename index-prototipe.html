@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-prototipe.css">
+    <title>Prototipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!--Inclure les bibliothèques d'icônes dans le fichier HTML-->
+</head>
+<body>
+    <header>
+        <h2 class="ayyurheader">ayyurUnivers</h2>
+        <div class="recherche-container">
+            <input type="text" id="" placeholder="Rechercher sur Ayyur..">
+            <img id="" src="./img/loupe-recherche.png">
+        </div>
+        <div class="social-icons">
+            <!-- Icône de notification -->
+            <a href="lien vers les notifications" target="_blank"><i class="fas fa-bell"></i></a>
+            <!-- Icône de messages -->
+            <a href="lien vers les messages" target="_blank"><i class="fas fa-envelope"></i></a>
+        </div>
+    </header>
+    <section class="section1">
+        <div class="section11">
+            <div class="social-icons">
+                <!-- Icône d'accueil -->
+                <a href="lien vers la page d'accueil" target="_blank"><span>Découvrir</span><i class="fas fa-home"></i></a>
+                <!-- Icône pour visuliser -->
+                <a href="lien vers les vidéos" target="_blank"><span>Visualiser</span><i class="fas fa-telescope"></i></a>
+                <!-- Icône pour se documenter -->
+                <a href="lien vers la documentation" target="_blank"><span>Approfondir</span><i class="fas fa-book-open"></i></a>
+            </div>
+        <div class="section12">
+
+        </div>
+        <div class="section13">
+
+        </div>
+    </section>
+    <script>
+        //Postionnement du header
+    
+    let lastScrollTop = 0;  //Cette variable sera utilisée pour stocker la position du défilement précédent.
+
+    window.addEventListener("scroll", function() {  //Cette ligne ajoute un écouteur d'événements sur la fenêtre qui se déclenche chaque fois que la page est défilée.
+
+        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;  //Cette ligne définit une variable currentScroll qui contient la position actuelle du défilement de la page. Elle utilise "window.pageYOffset" pour les navigateurs modernes et "document.documentElement.scrollTop" pour les anciens navigateurs. (Les deux barres verticales || sont un opérateur logique en JavaScript. Dans ce contexte spécifique, elles sont utilisées pour fournir une valeur de secours en cas de non-disponibilité de "window.pageYOffset")
+                                                                                       //"window.pageYOffset" est une propriété qui renvoie le nombre de pixels que le document a été défilé verticalement.
+        if (currentScroll > lastScrollTop) {  //Cette ligne vérifie si la position actuelle du défilement est supérieure à la position précédente du défilement, ce qui signifie que la page est en train d'être défilée vers le bas.
+
+        // Faites défiler vers le bas
+        document.querySelector("header").style.top = "-100px";  //Cache le header en le déplaçant vers le haut. Dans cet exemple, le header est déplacé de -100 pixels vers le haut, ce qui le rend invisible.
+
+        } else {
+
+        // Faites défiler vers le haut
+        document.querySelector("header").style.top = "0";  //Affiche le header en le ramenant à sa position d'origine
+        }
+
+        lastScrollTop = currentScroll;
+    });
+    </script>
+</body>
+</html>

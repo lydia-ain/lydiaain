@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet-Ayyur</title>
+    <link rel="stylesheet" href="style-projet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Montserrat:wght@500&family=Poppins:ital,wght@0,700;0,800;1,700;1,800&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!--Inclure les bibliothèques d'icônes dans le fichier HTML-->
+</head>
+<body>
+        <header>
+            <a class="ayyur" href="#">a<span>y</span>yur<br>un<span>i</span>vers</a>
+            <ul>
+                <li><a id="accueil" href="#">accueil</a></li>
+                <li><a id="aproposdenous" href="#">à propos de nous</a></li>
+                <li><a href="#footer">contact</a></li>
+                <a class="sedcmnt" href="#">se documenter</a>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </ul>
+        </header>
+
+        <section class="section1">
+            <video autoplay muted loop id="bgvideo">
+                <source src="Animation-Ciel.étoiléL.mp4" type="video/mp4">
+            </video>
+            <div class="containerS1">
+                <h2><span>a<span class="span2">y</span>yur un<span class="span2">i</span>vers :</span><br> Votre compagnon dans le cosmos.</h2>
+                <p>"Notre application a été conçue pour vous accompagner dans votre quête de connaissances
+                    astronomiques. Plongez dans l'univers avec nous et découvrez un espace interactif où vous pouvez
+                    non seulement explorer les merveilles célestes, mais aussi échanger des idées et des connaissances
+                    avec d'autres passionnés d'astronomie du monde entier. Rejoignez notre communauté et partagez votre
+                    passion pour les étoiles !"</p>
+                <div class="boutons">
+                    <a class="buton1" href="#">S'inscrire</a>
+                    <a class="buton2" href="#">Accéder à mon compte</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section2">
+            <video autoplay muted loop id="bgvideo">
+                <source src="Animation-Ciel.étoiléL.mp4" type="video/mp4">
+            </video>
+            <div class="containerS2">
+                <a class="ayyurfooter" href="#">ayyurUnivers</a>
+                <form>
+                    <input type="text" placeholder="Identifiant (numéro. téléphone, nom d'utilisateur ou e-mail)">
+                    <div class="password-container">
+                        <input type="password" id="passwordInput" placeholder="Saisissez votre mot de passe">
+                        <img id="togglePassword" src="oeil-password.png">
+                    </div>
+                    <input type="submit" value="Se connecter">
+                </form>
+                <a class="motdepasseoublié" href="#">Mot de passe oublié ?</a>
+            </div>
+        </section>
+
+        <section class="section4">
+            <video autoplay muted loop id="bgvideo">
+                <source src="Animation-Ciel.étoiléL.mp4" type="video/mp4">
+            </video>
+            <div class="containerS4">
+                <a class="ayyurfooter" href="#">ayyurUnivers</a>
+                <form>
+
+                    <div class="nomprenom">
+                        <input class="nom" type="text" placeholder="Veuillez entrer votre nom">
+                        <input class="prenom" type="text" placeholder="Veuillez entrer votre prénom">
+                    </div>
+
+                    <input class="emailnum" type="text" placeholder="Entrez votre e-mail ou numéro de téléphone">
+
+                    <div class="password-container">
+                        <input type="password" id="passwordInput" placeholder="Saisissez votre mot de passe">
+                        <img id="togglePassword" src="oeil-password.png">
+                    </div>
+
+                    <div class="password-container">
+                        <input type="password" id="passwordInput" placeholder="Confirmez votre mot de passe">
+                        <img id="togglePassword" src="oeil-password.png">
+                    </div>
+
+                    <div class="datenaissence-container">
+                        <label for="birthdate">Veuillez entrer votre date de naissance :</label>
+                        <div>
+                            <input type="number" id="day" name="day" min="1" max="31" placeholder="Jour" required>
+                            <input type="number" id="month" name="month" min="1" max="12" placeholder="Mois" required>
+                            <input type="number" id="year" name="year" min="1950" max="2015" placeholder="Année" required>
+                        </div>
+                    </div>
+
+                    <div class="genre-container">
+                        <label for="genre">Veuillez sélectionner votre genre :</label>
+                        <div class="hommefemme">
+                            <div>
+                                <input type="radio" name="genre" value=""> <span>homme</span>
+                            </div>
+                            <div>
+                                <input type="radio" name="genre" value=""> <span>femme</span>
+                            </div>
+                        </div>   
+                    </div>
+
+                </form>
+
+                <textarea name="" id="" cols="40" rows="05" placeholder="Qu'est-ce qui vous motive à rejoindre la communauté AYYUR UNIVERS et à participer à ses activités ?"></textarea>
+
+                <input type="submit" value="Valider">
+
+            </div>
+        </section>
+    
+        <section class="section3">
+            <div class="containerS3">
+                <div class="part">
+                    <h2>Historique de l'application : origines et développement :</h2>
+                    <p>Il était une fois, dans les couloirs de l'Université de Béjaïa Abderrahmane Mira en Algérie,
+                        un groupe de jeunes développeurs passionnés d'astronomie. Animés par une curiosité sans
+                        bornes pour l'univers infini qui s'étend au-delà de nos cieux, ces étudiants ont décidé
+                        d'unir leurs compétences en informatique pour créer quelque chose de spécial.
+                        <br>
+                        Guidés par leur amour commun pour les mystères du cosmos, ces jeunes esprits ont entrepris
+                        un voyage extraordinaire dans le monde de la programmation et de l'astronomie. Leur
+                        ambition ? Concevoir une application novatrice qui permettrait à chacun de plonger dans les
+                        profondeurs infinies de l'espace et d'explorer les merveilles célestes à travers une
+                        interface interactive et captivante.
+                        <br>
+                        Ainsi est née l'idée de Ayyur Univers, une application conçue pour ouvrir les portes de
+                        l'astronomie à tous, des passionnés les plus chevronnés aux curieux novices. Avec une
+                        équipe de six développeurs déterminés à faire de leur vision une réalité, Ayyur Univers
+                        est rapidement devenu bien plus qu'un simple projet universitaire. C'est devenu une passion
+                        partagée, un rêve commun de découvrir et de comprendre les mystères de l'univers.
+                        <br>
+                        Les six membres fondateurs de l'équipe, chacun apportant son expertise et sa passion unique
+                        à cette entreprise commune, sont :
+                        <br><br>
+                        1- Ait dib Réza.<br>
+                        2-  Nadir.<br>
+                        3-  Chaneze.<br>
+                        4-  Lydia.<br>
+                        5-  Maria.<br>
+                        6-  Chahinese.</p>
+                </div>
+                <div class="part">
+                    <h2>Genèse du nom : l'inspiration derrière "AYYUR UNIVERS" :</h2>
+                    <p>L'histoire fascinante derrière le nom "Ayyur Univers" remonte à nos racines kabyles, ancrées
+                        dans la riche culture de l'Algérie. "Ayyur" est un mot kabyle qui évoque la majesté et la
+                        mystique de la lune, symbole de lumière et de guidance dans notre folklore ancestral. En
+                        tant que développeurs d'origine kabyle, ce mot résonne profondément avec notre identité et
+                        notre héritage.
+                        <br>
+                        L'idée de "Ayyur" comme nom pour notre application est née de la vision inspirante de notre
+                        professeur à l'Université de Bejaia, qui nous a guidés et soutenus tout au long de notre
+                        parcours. Son influence précieuse et son dévouement ont été les fondements sur lesquels
+                        nous avons construit cette application, et nous lui sommes profondément reconnaissants.
+                        <br>
+                        Quant à "Univers", ce terme évoque l'immensité infinie de la connaissance et de la
+                        découverte qui nous attendent dans l'espace cosmique. C'est un rappel constant de notre
+                        quête de compréhension et d'exploration, ainsi que de notre engagement envers l'éducation
+                        et la diffusion du savoir.
+                        <br>
+                        Réunis par notre passion commune pour l'astronomie et inspirés par nos origines kabyles,
+                        nous nous sommes tous mis d'accord pour donner le nom de "Ayyur Univers" à notre
+                        application. C'est un hommage à nos racines, à notre professeur bien-aimé, et à notre
+                        aspiration partagée à explorer les mystères de l'univers.</p>
+                </div>
+                <div class="part">
+                    <h2>Esthétique et ambiance visuelle : les choix artistiques de l'application :</h2>
+                    <p>L'esthétique et l'ambiance visuelle de l'application AYYUR UNIVERS sont soigneusement
+                        sélectionnées pour offrir une expérience immersive et inspirante aux utilisateurs. Cette
+                        attention particulière commence dès le header, où la transparence est utilisée pour
+                        permettre à la vidéo céleste de s'afficher en dessous, créant ainsi une transition fluide
+                        entre les éléments.
+                        <br>
+                        La vidéo céleste joue un rôle crucial dans l'expérience utilisateur. Elle présente un ciel
+                        étoilé captivant, transportant les utilisateurs dans un voyage céleste. Cette vidéo
+                        inspirante permet aux utilisateurs de ressentir la grandeur et la beauté de l'univers,
+                        comme s'ils étaient réellement immergés dans l'espace. À la fin de la vidéo, l'apparition
+                        de la terre qui tourne autour d'elle-même crée un effet saisissant, symbolisant notre lien
+                        avec la planète.
+                        <br>
+                        Les choix de couleurs renforcent l'ambiance immersive de l'application. Les écritures en
+                        blanc contrastent avec le fond sombre, offrant une lisibilité optimale tout en maintenant
+                        une esthétique élégante. Les touches de rouge, qui évoquent le lever du soleil, ajoutent
+                        une touche de chaleur et de dynamisme à l'ensemble. Ce rouge est associé à des nuances
+                        d'orange et de jaune, évoquant la beauté et la vivacité des premières lueurs du jour.
+                        <br>
+                        Enfin, le choix du noir pour le footer contribue à maintenir une atmosphère sombre et
+                        mystérieuse, en harmonie avec le thème cosmique de l'application. Cette cohérence visuelle
+                        à travers tous les éléments de l'interface crée une expérience utilisateur immersive et
+                        cohérente, captivant l'imagination des utilisateurs et les invitant à explorer davantage
+                        l'univers fascinant d'AYYUR UNIVERS.</p>
+                </div>
+                <div class="part">
+                    <h2>Objectifs et réalisations : exploration cosmique et interactions sociales :</h2>
+                    <p>AYYUR UNIVERS a été conçu avec un objectif clair : permettre aux passionnés de l'univers de
+                        se plonger dans une expérience immersive de découverte et d'interaction sociale. Notre
+                        application offre une plateforme dynamique où les utilisateurs peuvent explorer divers
+                        sujets liés à l'espace, aux étoiles, aux différentes planètes et aux systèmes solaires,
+                        enrichissant ainsi leur connaissance de l'univers infini qui nous entoure.
+                        <br>
+                        Au-delà de la documentation, AYYUR UNIVERS favorise également l'engagement social en
+                        permettant aux utilisateurs de publier leurs propres contenus, de réagir aux publications
+                        d'autres utilisateurs et d'interagir avec une communauté passionnée et engagée. Les
+                        fonctionnalités telles que la possibilité de liker, commenter, réagir aux commentaires et
+                        partager des publications avec des amis offrent un espace d'expression et d'échange où les
+                        idées et les connaissances circulent librement.
+                        <br>
+                        Nous sommes fiers de promouvoir un environnement respectueux et inclusif, où la diversité
+                        d'opinions et de perspectives est valorisée. Nos utilisateurs s'engagent à maintenir un
+                        contenu de qualité, en veillant à ce que les discussions restent centrées sur les thèmes
+                        cosmiques et scientifiques, tout en évitant les contenus inappropriés et les comportements
+                        irrespectueux.
+                        <br>
+                        Grâce à cette combinaison unique d'exploration cosmique et d'interactions sociales
+                        positives, AYYUR UNIVERS crée une communauté vibrante et enrichissante, où les
+                        utilisateurs peuvent élargir leurs horizons, se connecter avec d'autres passionnés et
+                        partager leur amour pour l'univers dans toute sa splendeur.</p>
+                </div>
+                <div class="part">
+                    <h2>Engagement envers les clients :</h2>
+                    <p>L'engagement envers nos clients est au cœur de notre mission chez AYYUR UNIVERS. Nous nous
+                        engageons à offrir une expérience utilisateur exceptionnelle en fournissant des services
+                        de qualité, un support client réactif et une écoute attentive à leurs besoins. Notre
+                        objectif est de garantir la satisfaction de nos clients à chaque étape de leur parcours
+                        avec notre application. Nous valorisons leurs commentaires, suggestions et préoccupations,
+                        et nous nous efforçons constamment d'améliorer nos services pour mieux répondre à leurs
+                        attentes. Chez AYYUR UNIVERS, notre engagement envers nos clients est notre priorité
+                        absolue.</p>
+                </div>
+                <div class="part">
+                    <h2>Services offerts : les diverses prestations ou fonctions que l'application propose à 
+                        ses utilisateurs :</h2>
+                    <p>1. Exploration Cosmique :  Permet aux utilisateurs de découvrir des informations détaillées
+                        sur l'univers, y compris les étoiles, les planètes, les constellations et les galaxies.
+                        <br>
+                        2. Interactions Sociales :  Offre aux utilisateurs la possibilité de partager leurs
+                        découvertes, de commenter et de réagir à d'autres publications, de se connecter avec
+                        d'autres passionnés d'astronomie et d'échanger des idées.
+                        <br>
+                        3. Publication de Contenus :  Permet aux utilisateurs de publier leurs propres contenus
+                        liés à l'astronomie, tels que des articles, des images, des vidéos, des observations, etc.
+                        <br>
+                        4. Interaction avec les Publications :  Permet aux utilisateurs d'aimer, de commenter et de
+                        partager les publications des autres membres de la communauté, favorisant ainsi l'échange
+                        d'idées et la discussion.
+                        <br>
+                        5. Création de Réseaux :  Permet aux utilisateurs de se connecter avec d'autres passionnés
+                        d'astronomie, de suivre leurs activités, de nouer des amitiés et d'interagir au sein de la
+                        communauté.
+                        <br>
+                        6. Modération de Contenus :  Garantit que les contenus partagés restent pertinents et
+                        respectueux en modérant les publications et en réprimant tout contenu inapproprié ou hors
+                        sujet.
+                        <br>
+                        7. Notifications Personnalisées :  Permet aux utilisateurs de recevoir des notifications
+                        personnalisées sur les dernières découvertes, les commentaires sur leurs publications et
+                        les activités de leurs amis.
+                        <br>
+                        8. Recherche Avancée :  Offre une fonctionnalité de recherche avancée permettant aux
+                        utilisateurs de trouver rapidement des informations spécifiques sur des sujets
+                        astronomiques particuliers.
+                        <br>
+                        9. Suivi d'Utilisateurs :  Permet aux utilisateurs de suivre d'autres membres de la
+                        communauté pour rester informés de leurs activités et de leurs publications.
+                        <br>
+                        10. Paramètres de Confidentialité :  Donne aux utilisateurs le contrôle sur la
+                        confidentialité de leurs données et de leurs publications en leur permettant de gérer
+                        leurs paramètres de confidentialité.</p>
+                </div>
+                <div class="part">
+                    <h2>Coordonnées de contact :</h2>
+                    <p> • Facebook :  <a class="cocontact" href="https://www.facebook.com/chi.nez.169?locale=fr_FR">Ayyur Univers</a> <br><br>
+                        • Instagram :  <a class="cocontact"class="mail" href="https://www.instagram.com/NomDeLaPage">ayyur.univers</a> <br><br>
+                        • E-mail :  <a class="cocontact" href="mailto:AdresseDeLappli@email.com">ayyurunivers@gmail.com</a> <br><br>
+                        • Adresse (Direction Principale) : Bâtiment * Logement n° *, Cité *, Béjaïa, 06000, Bejaia, Algérie. <br>
+                        </p>
+                </div>
+            </div>
+        </section>
+
+        <!--<section class="section5">
+            <div class="containerS5">
+                <p>"Découvrez les étoiles, galaxies et planètes comme jamais auparavant ! Notre plateforme vous
+                    ouvre les portes d'un voyage passionnant à travers l'Univers, où chaque clic vous rapproche
+                    des secrets cachés des cieux. Que vous soyez un astronome amateur ou un explorateur
+                    intergalactique en herbe, notre mission est de vous inspirer et de vous émerveiller devant la
+                    majesté de l'espace. Préparez-vous à explorer, apprendre et rêver avec nous, car l'aventure
+                    commence ici."</p>
+                    <ul>
+                        <li><a href=""></a></li>
+                    </ul>
+            </div>
+        </section> -->
+
+        <footer id="footer">
+            <div class="footerP1">
+                <a class="ayyurfooter" href="#">ayyurUnivers</a>
+                <p>Copyright &copy; 2024 Ayyur Univers. Tous droits réservés.</p>
+            </div>
+            <div class="footerP2">
+                <h2>Fonctionnalités </h2>
+                <ul>
+                    <li>*</li>
+                    <li>*</li>
+                    <li>*</li>
+                    <li>*</li>
+                    <li>*</li>
+                    <li>*</li>
+                    <li>*</li>
+                    <li>*</li>
+                </ul>
+            </div>
+            <div class="footerP3">
+                <div class="social-icons">                                                                              <!--Les attributs "href" dans les balises <a> définissent les liens vers vos pages Facebook et Instagram. Assurez-vous de remplacer "https://www.facebook.com/votrepage" et "https://www.instagram.com/votrecompte" par les liens réels vers vos pages.-->
+                    <a href="https://www.facebook.com/chi.nez.169?locale=fr_FR" target="_blank"><i class="fab fa-facebook"></i></a>  <!--L'attribut "target="_blank"" indique aux navigateurs d'ouvrir les liens dans une nouvelle fenêtre ou un nouvel onglet, ce qui est généralement souhaitable pour les liens externes.-->
+                    <a href="https://www.instagram.com/NomDeLaPage" target="_blank"><i class="fab fa-instagram"></i></a><!--Les balises <i> contiennent les classes "fab fa-facebook" et "fab fa-instagram" pour les icônes de Facebook et d'Instagram, respectivement. Ces classes sont fournies par Font Awesome et affichent les icônes correspondantes-->
+                </div>
+                <p>Signaler un problème :</p>
+                <a class="mail" href="mailto:AdresseDeLappli@email.com">Nous sommes disponibles par e-mail</a>
+                <p>Préférence linguistique :</p>
+                <ul>
+                    <li>
+                        <a id="" href="#">
+                            <img src="./img/drapeau-Angleterrepng.png" alt="">
+                            <span>English</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="" href="#">
+                            <img src="./img/drapeau-France.png" alt="">
+                            <span>Français</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="" href="#">
+                            <img src="./img/drapeau-Algérie.png" alt="">
+                            <span>العربية</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+<script>
+    let accueil = document.getElementById('accueil');
+    let aproposnous = document.getElementById('aproposdenous');
+    let sdocumenter = document.querySelector('.sedcmnt');
+    let troispoints = document.querySelector('.menu-toggle');
+    
+
+    let btnaccacompte = document.querySelector('.buton2');
+    let sinscrire = document.querySelector('.buton1');
+
+
+    let sect1 = document.querySelector('.section1');
+    let sect2 = document.querySelector('.section2');
+    let sect3 = document.querySelector('.section3');
+    let sect4 = document.querySelector('.section4');
+    
+    
+    
+    troispoints.addEventListener('click', function(){
+        alert("Veuillez vous connecter pour accéder à cette fonctionnalité.");
+    })
+    
+    
+    btnaccacompte.addEventListener('click', function(){
+        sect1.style.visibility = "hidden";
+        sect1.style.height = "0";
+        sect2.style.visibility = "visible";
+        sect2.style.height = "105vh";
+    })
+
+
+    sinscrire.addEventListener('click', function(){
+        alert("Remarque : vous devez avoir au moins 10 ans pour pouvoir créer un compte.")
+        sect1.style.visibility = "hidden";
+        sect1.style.height = "0";
+        sect4.style.visibility = "visible";
+        sect4.style.height = "150vh";
+    })
+
+    
+    accueil.addEventListener('click', function(){
+        sect2.style.visibility = "hidden";
+        sect2.style.height = "0";
+        sect3.style.visibility = "hidden";
+        sect3.style.height = "0";
+        sect4.style.visibility = "hidden";
+        sect4.style.height = "0";
+        sect1.style.visibility = "visible";
+        sect1.style.height = "100vh";
+    })
+
+    aproposnous.addEventListener('click', function(){
+        sect1.style.visibility = "hidden";
+        sect1.style.height = "0";
+        sect2.style.visibility = "hidden";
+        sect2.style.height = "0";
+        sect4.style.visibility = "hidden";
+        sect4.style.height = "0";
+        sect3.style.visibility = "visible";
+        sect3.style.height = "400vh";
+    })
+
+
+
+    //faire apparaitre le mdpss
+
+    const passwordInput = document.getElementById('passwordInput');
+    const togglePasswordButton = document.getElementById('togglePassword');
+
+    togglePasswordButton.addEventListener('click', function() {
+
+        const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordInput.setAttribute('type', type);
+        togglePasswordButton.innerHTML = type === 'password' ? '<img src="./assets/img/oeil-password.png">' : '<img src="./assets/img/oeil.barrée-password.png">';
+    });
+
+
+
+    //Postionnement du header
+    
+    let lastScrollTop = 0;  //Cette variable sera utilisée pour stocker la position du défilement précédent.
+
+    window.addEventListener("scroll", function() {  //Cette ligne ajoute un écouteur d'événements sur la fenêtre qui se déclenche chaque fois que la page est défilée.
+
+        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;  //Cette ligne définit une variable currentScroll qui contient la position actuelle du défilement de la page. Elle utilise "window.pageYOffset" pour les navigateurs modernes et "document.documentElement.scrollTop" pour les anciens navigateurs. (Les deux barres verticales || sont un opérateur logique en JavaScript. Dans ce contexte spécifique, elles sont utilisées pour fournir une valeur de secours en cas de non-disponibilité de "window.pageYOffset")
+                                                                                       //"window.pageYOffset" est une propriété qui renvoie le nombre de pixels que le document a été défilé verticalement.
+        if (currentScroll > lastScrollTop) {  //Cette ligne vérifie si la position actuelle du défilement est supérieure à la position précédente du défilement, ce qui signifie que la page est en train d'être défilée vers le bas.
+
+        // Faites défiler vers le bas
+        document.querySelector("header").style.top = "-100px";  //Cache le header en le déplaçant vers le haut. Dans cet exemple, le header est déplacé de -100 pixels vers le haut, ce qui le rend invisible.
+
+        } else {
+
+        // Faites défiler vers le haut
+        document.querySelector("header").style.top = "0";  //Affiche le header en le ramenant à sa position d'origine
+        }
+
+        lastScrollTop = currentScroll;
+    });
+
+
+</script>    
+</body>
+</html>

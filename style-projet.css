@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@500 & family= Poppins:wght@300;400;500;600;700 & family= Roboto:wght@ 700 & display=échange');
+
+*{
+    margin: 0px;
+    padding: 0px;   
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif; 
+    scroll-behavior: smooth;
+}
+
+p{
+    font-weight: 300;
+    color: #fff;
+}
+
+header{
+    position: fixed;
+    z-index: 1000; /*Afin de s'assurer que cet élément sera superposé à d'autres éléments avec des z-index inférieurs ou par défaut. Cela signifie que l'élément header sera placé au-dessus des autres éléments de la page, sauf s'ils ont un z-index encore plus élevé.*/
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+.ayyur{
+    color: #fff;
+    font-size: 2em;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-left: 25px;
+    font-family : "Electrolize", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+ }
+
+
+.ayyur span{
+    color: #f54c22b9;
+    font-family : "Electrolize", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+ }
+
+
+ul{
+    display: flex;
+    align-items: center;
+    position: relative;
+ }
+
+
+ul li {
+    list-style: none;
+ }
+
+
+ul a{
+    color: #fff;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-right: 30px;
+ }
+
+
+ul a:hover{
+    color: #FF4500;
+    border-bottom: 2px solid #FF4500;
+ }
+
+.sedcmnt{
+    text-transform: uppercase;
+    border: 2px solid #FF4500;
+    border-radius: 15px;
+    padding: 8px 10px;
+    transition: 0.2s;
+ }
+
+
+.sedcmnt:hover{
+    text-decoration: underline;
+ }
+
+
+.menu-toggle {
+    height: 20px;
+    width: 15px;
+    position: relative; /*Le conteneur ".menu-toggle" est positionné relativement par rapport à son conteneur parent, cela permet d'établir un contexte de positionnement pour les éléments enfants positionnés absolument (les span)*/
+    cursor: pointer;
+}
+
+
+.menu-toggle span {
+    position: absolute; /*Les span sont positionnés absolument par rapport à leur premier ancêtre positionné, qui est maintenant le conteneur ".menu-toggle" */
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #FF4500;
+    top: 0; /*Positionner le premier span au début du conteneur ".menu-toggle." */
+}
+
+
+.menu-toggle span:nth-child(2) {
+    top: 50%; /*Positionner le deuxième span au milieu du conteneur .menu-toggle. En spécifiant top: 50%;, le centre vertical du deuxième span est aligné avec le centre vertical du conteneur .menu-toggle*/
+}
+
+
+.menu-toggle span:nth-child(3) {
+    top: 100%; /*Positionner le troisième span au bas du conteneur .menu-toggle. En spécifiant top: 100%;, le troisième span est placé juste en dessous du conteneur .menu-toggle.*/
+    /*transform: translateY(-50%);  Centrer verticalement le troisième span par rapport à son conteneur ".menu-toggle", le translateY(-50%) déplace le span de 50% de sa propre hauteur vers le haut, ce qui le centre verticalement par rapport au conteneur ".menu-toggle"*/
+}
+
+
+.section1 {
+    position: relative; /*Cela définit la position de l'élément comme étant relative par rapport à sa position initiale.*/
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /*Cela cache tout contenu qui dépasse les dimensions de l'élément conteneur.*/
+}
+
+#bgvideo{
+    position: absolute; /*Cela définit la position de l'élément comme étant absolue par rapport à son premier ancêtre positionné.*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*Cela spécifie comment l'élément vidéo doit s'ajuster dans son conteneur en maintenant son aspect ratio et en remplissant le conteneur.*/
+    z-index: -1; /*Cela place l'élément en arrière-plan par rapport aux autres éléments.*/
+    filter: brightness(0.7); /*Cela applique un filtre de luminosité à l'élément vidéo, réduisant sa luminosité vers 70%.*/
+}
+
+
+.containerS1{
+    height: 80%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px; /*Afin d'avoir mon containerS1 en dessous du header*/
+ }
+
+.containerS1 h2{
+    text-align: center;
+    color: #fff;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+ }
+
+.containerS1 h2 span{
+    color: #fff;
+    font-family : "Electrolize", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+ }
+
+.containerS1 h2 .span2{
+    color: #f54c22b9;
+ }
+
+.boutons{
+    margin-top: 35px;
+ }
+
+.boutons .buton1{
+    color: rgb(36, 32, 32);
+    background-color: #fff;
+    padding: 6px 12px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    margin-right: 15px;
+    font-size: 1em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.2s;
+ }
+
+.boutons .buton1:hover{
+    color: #FF4500;
+    text-decoration: underline;
+    cursor: pointer;
+    letter-spacing: 1px;
+ }
+
+
+.boutons .buton2{
+    color: #fff;
+    background-color: transparent;
+    padding: 6px 12px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    margin-right: 15px;
+    font-size: 1em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.2s;
+ }
+
+
+.boutons .buton2:hover{
+    color: #FF4500;
+    text-decoration: underline;
+    cursor: pointer;
+    letter-spacing: 1px;
+ }
+
+ 
+footer{
+    height: 250px;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+ }
+
+
+.footerP1{
+    flex-basis: 35%; /*Le premier élément enfant prend 40% de la largeur du conteneur parent "footer" */
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+}
+
+
+.footerP1 .ayyurfooter{
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    font-size: 1.6em;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin: 30px;
+    padding: 4px;
+    font-family : "Electrolize", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    width: fit-content; /*Ajuster la largeur du bouton en fonction du contenu, éliminant ainsi l'espace excessif à droite.*/
+ }
+
+
+.footerP1 p{
+    margin-top: auto; /*Lorsque vous utilisez "margin-top: auto;", cela signifie que l'élément prendra autant de marge supérieure que possible à l'intérieur de son conteneur*/
+ }
+
+
+.footerP2{
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    border-right: 1px solid #fff;
+}
+
+
+.footerP2 h2{
+    color: #fff;
+    top: 0;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+
+.footerP2 ul{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footerP2 ul li{
+    color: #fff;
+    font-size: 0.9em;
+}
+
+
+.footerP3{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+
+.footerP3 .social-icons i{
+    font-size: 30px;
+    margin-right: 10px; 
+    color: #fff;
+    top: 0;
+}
+
+
+.footerP3 .mail{
+    color: grey;
+    font-size: 0.9em;
+    margin-bottom: 25px;
+}
+
+
+.footerP3 p{
+    margin-top: 20px;
+    font-size: 0.9em;
+    text-transform: capitalize;
+}
+
+.footerP3 ul a img{
+    height: 25px;
+    width: 25px;
+}
+
+
+.footerP3 ul a span{
+    font-size: 0.7em;
+}
+
+
+.section2{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    /*background: linear-gradient(to bottom right, rgb(1, 1, 31) 60%, #FF4500); /*linear-gradient: dégradé lineaire*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden; /*Utilisation de visibility:hidden; pour masquer le contenu de .section2*/
+    height: 0; /*Masquer la hauteur de la section pour masquer egalement l'espace que prend .section2*/
+    overflow: hidden;
+}
+
+
+.containerS2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 3px solid #fff;
+    border-radius: 25px;
+    padding: 25px 10px;
+    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
+}
+
+
+.containerS2 .ayyurfooter{
+    color: black;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-size: 1.6em;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 4px;
+    font-family : "Electrolize", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    width: fit-content; /*Ajuster la largeur du bouton en fonction du contenu, éliminant ainsi l'espace excessif à droite.*/
+    margin-bottom: 75px;
+}
+
+
+.containerS2 form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+
+.containerS2 form input[type="text"]{
+    margin: 10px 0;
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+
+
+.containerS2 form input[type="text"]:focus{
+    outline: none;
+}
+
+
+.password-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 8px 12px;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+
+
+.password-container input[type="password"]{
+    width: 90%;
+    border: none;
+}
+
+
+.password-container input[type="password"]:focus{   /*Lorsque l'élément <input> est sélectionné (lorsqu'il a le focus), aucun contour ne doit être affiché.*/
+    outline: none;
+}
+
+
+.password-container img{
+    height: 20px;
+    width: 5%;
+}
+
+
+.containerS2 form input[type="submit"]{
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    background-color: black;
+    color: #fff ;
+    margin-bottom: 15px;
+}
+
+
+.containerS2 form input[type="submit"]:hover{
+    background-color: #141414;
+    text-decoration: underline;
+}
+
+
+.containerS2 .motdepasseoublié{
+    margin-top: 0;
+    color: rgb(31, 1, 31);
+}
+
+
+.section3{
+    position: relative;
+    height: 400vh;
+    width: 100%;
+    background: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden; /*Utilisation de visibility:hidden; pour masquer le contenu de .section3*/
+    height: 0; /* Masquer la hauteur de la section pour masquer egalement l'espace que prend .section3*/
+    overflow: hidden;
+}
+
+
+.containerS3{
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 25px 10px;
+    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
+}
+
+
+.part{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 10px;
+}
+
+
+.part h2{
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: grey;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+
+.part p{
+    width: 100%;
+    color: #ffffffb0;
+    font-size: 0.9em;
+}
+
+
+.cocontact{
+    color: grey;
+    font-size: 0.9em;
+}
+
+
+.section4{
+    position: relative;
+    height: 150vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+}
+
+
+.containerS4{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 3px solid #fff;
+    border-radius: 25px;
+    padding: 25px 10px;
+    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
+}
+
+
+.containerS4 .ayyurfooter{
+    color: black;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-size: 1.6em;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 4px;
+    font-family : "Electrolize", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    width: fit-content; /*Ajuster la largeur du bouton en fonction du contenu, éliminant ainsi l'espace excessif à droite.*/
+    margin-bottom: 50px;
+}
+
+
+.containerS4 form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+
+.containerS4 .nomprenom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.containerS4 .nom{
+    width: 70%;
+    margin: 10px 5px 10px 0;
+    padding: 8px 12px;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+
+
+.containerS4 .prenom{
+    width: 70%;
+    margin: 10px 0 10px 5px;
+    padding: 8px 12px;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+
+
+.containerS4 .emailnum{
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px 12px;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+
+
+.containerS4 .datenaissence-container{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+}
+
+
+.containerS4 .datenaissence-container label{
+    font-size: 0.9em;
+    font-weight: bold;
+    color: rgba(32, 27, 27, 0.795);
+}
+
+
+.containerS4 .datenaissence-container input[type="number"]{
+    padding: 8px;
+    width: 20%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    border: none;
+}
+
+
+.containerS4 .genre-container{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+}
+
+
+.containerS4 .genre-container label{
+    font-size: 0.9em;
+    font-weight: bold;
+    color: rgba(32, 27, 27, 0.795);
+}
+
+
+.containerS4 .hommefemme{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.containerS4 .hommefemme span{
+    text-transform: capitalize;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: gray;
+}
+
+
+.containerS4 textarea{
+    padding: 8px 12px;
+    border-radius: 15px;
+}
+
+
+.containerS4 input[type="submit"]{
+    width: 75%;
+    padding: 8px 12px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    background-color: black;
+    color: #fff ;
+    margin: 20px 0;
+}
+
+
+.containerS4 input[type="submit"]:hover{
+    background-color: #141414;
+    text-decoration: underline;   
+}
