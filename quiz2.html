@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<style>
+   body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(trounoir.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+    .container {
+        width: 450px;
+        padding: 20px;
+        margin-top: 80px;
+        background: linear-gradient(rgb(236, 95, 95), rgb(22, 19, 24));
+        box-shadow: 0 2px 4px rgba(13, 1, 238, 0.1);
+        border-radius: 20px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .question {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .options {
+        margin-bottom: 20px;
+    }
+
+    .option {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #428bca;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+        margin-right: 10px;
+    }
+
+    .button:hover {
+        background-color: #3071a9;
+    }
+
+    .result {
+        text-align: center;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+
+    .hide {
+        display: none;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1> AYYUR Quiz </h1>
+        <div id="quiz"></div>
+        <div id="result" class="result"></div>
+        <button id="submit" class="button">Submit</button>
+        <button id="retry" class="button hide">Retry</button>
+        <button id="showAnswer" class="button hide">Show Answer</button>
+    </div>
+</body>
+<script src="quizjs2.js"></script>
+
+</html>

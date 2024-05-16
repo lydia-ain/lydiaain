@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(etoile.jpg);
+
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .quiz-link {
+            display: inline-block;
+            margin: 20px;
+            text-decoration: none;
+        }
+
+        .quiz-image {
+            width: 470px;
+            height: 290px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .quiz-title {
+            margin-top: 10px;
+            font-size: 18px;
+            color: white
+        }
+
+        p {
+            font-size: 30px;
+            background: linear-gradient(rgb(0, 166, 255), rgb(38, 14, 221));
+            text-align: center;
+            margin-top: -650px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>AYYUR QUIZ</p>
+    <div class="container">
+        <h1>Choisissez un quiz :</h1>
+        <a href="quiz.html" class="quiz-link">
+            <div class="quiz-image1">
+                <img src="astronmiequiz.jpg">
+            </div>
+            <div class="quiz-title">Quiz générale</div>
+        </a>
+        <a href="quiz2.html" class="quiz-link">
+            <div class="quiz-image2">
+                <img src="trou.jpg">
+            </div>
+            <div class="quiz-title">Quiz 2</div>
+        </a>
+        <a href="quiz3.html" class="quiz-link">
+            <div class="quiz-image">
+                <img src="OIP (1).jpg">
+            </div>
+            <div class="quiz-title">Quiz 3</div>
+        </a>
+    </div>
+</body>
+
+<script src="quiz.js"></script>
+
+</html>
